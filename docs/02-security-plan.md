@@ -128,10 +128,10 @@ All API keys stored in `.env` file on server, injected as environment variables:
 
 ## 4. SSL/TLS
 
-- Let's Encrypt certificate for `grappes.4bees.io`
+- Let's Encrypt certificate for `grappes.ai`
 - Nginx terminates TLS (TLSv1.2 + TLSv1.3)
 - HTTP → HTTPS redirect enforced
-- Certificate path: `/etc/letsencrypt/live/grappes.4bees.io/`
+- Certificate path: `/etc/letsencrypt/live/grappes.ai/`
 - **TODO:** Set up auto-renewal cron: `certbot renew --quiet`
 
 ## 5. Incident History

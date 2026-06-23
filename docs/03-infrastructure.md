@@ -17,10 +17,10 @@
 
 | Property | Value |
 |----------|-------|
-| Domain | grappes.4bees.io |
+| Domain | grappes.ai |
 | DNS | Managed via domain registrar → A record → 164.92.248.164 |
 | SSL | Let's Encrypt (auto via certbot) |
-| Certificate path | `/etc/letsencrypt/live/grappes.4bees.io/` |
+| Certificate path | `/etc/letsencrypt/live/grappes.ai/` |
 | Protocols | TLSv1.2, TLSv1.3 |
 
 ## 3. Docker Architecture
@@ -60,10 +60,10 @@
 ## 5. Nginx Routing
 
 ```
-https://grappes.4bees.io/api/*  →  backend:8080  (proxy_pass, SSE-friendly: no buffering)
-https://grappes.4bees.io/health →  backend:8080  (health endpoint)
-https://grappes.4bees.io/*      →  frontend:3000 (Next.js, WebSocket upgrade for HMR)
-http://grappes.4bees.io/*       →  301 redirect to https
+https://grappes.ai/api/*  →  backend:8080  (proxy_pass, SSE-friendly: no buffering)
+https://grappes.ai/health →  backend:8080  (health endpoint)
+https://grappes.ai/*      →  frontend:3000 (Next.js, WebSocket upgrade for HMR)
+http://grappes.ai/*       →  301 redirect to https
 ```
 
 ## 6. Compose Files
@@ -131,7 +131,7 @@ All secrets are in `/opt/polyai/.env` (not committed to git).
 
 ## 10. Monitoring (TODO)
 
-- [ ] Uptime monitoring (e.g. UptimeRobot on https://grappes.4bees.io/health)
+- [ ] Uptime monitoring (e.g. UptimeRobot on https://grappes.ai/health)
 - [ ] Docker container restart alerts
 - [ ] Disk space monitoring
 - [ ] Log aggregation

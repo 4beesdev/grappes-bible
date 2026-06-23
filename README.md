@@ -12,7 +12,7 @@ Complete project documentation for **grappes.ai** — a multi-agent AI roundtabl
 
 ## Quick Links
 
-- **Production:** https://grappes.4bees.io
+- **Production:** https://grappes.ai
 - **Code repo:** https://github.com/4beesdev/grappes-ai
 - **Server:** 164.92.248.164 (DigitalOcean, AMS3)
 
